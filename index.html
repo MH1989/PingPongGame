@@ -10,7 +10,28 @@
   </head>
   <body>
     <div class="container">
-          
+          <header>
+              <h1>Ping Pong Game</h1>
+              <h3>Here are the rules:</h3>
+              <p>Enter a number, and Ping Pong will count up to it from 1 with the following exceptions</p>
+                <ol>
+                  <li>Numbers divisible by 3 become "ping!"</li>
+                  <li>Numbers divisible by 5 become "pong!"</li>
+                  <li>Numbers divisible by 15 become "pingpong!"</li>
+                </ol>
+          </header>
+          <form id="pingPong">
+            <div class="form-group">
+              <label for="pingPongInput">Enter your number here:</label>
+              <input id="userInput" type="text">
+            </div>
+            <button type="submit" class="btn btn-success" name="button">PING PONG!</button>
+          </form>
+          <div id="pingPongResults">
+            <ul id="pingPongList">
+
+            </ul>
+          </div>
         </div>
   </body>
 </html>
