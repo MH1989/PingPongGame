@@ -31,7 +31,7 @@ https://github.com/MH1989/PingPongGame
     - regular commits
 
 - HTML
-    - p, h, ul, ol, li, em, strong, a, img, div, span tags
+    - p, h, ul, ol, li, a, div tags
 
 - CSS
     - cascading, the box model, and floats
