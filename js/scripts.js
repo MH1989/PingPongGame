@@ -13,3 +13,19 @@ var pingPong = function(number) {
   }
   return results;
 }
+
+$(document).ready(function() {
+  $("#pingPong").submit(function(event) {
+    event.preventDefault();
+
+    var number = parseInt($("#userInput").val());
+    var results = pingPong(number);
+
+    $("#pingPongResults").show();
+    $("#pingPongList").empty();
+
+    for (var i=0;i<results.length;i++) {
+      $("#pingPongList").append("<li>" + results[i] + "</li>");
+      }
+  });
+});
